@@ -27,6 +27,7 @@
         if (animal["primary_photo_cropped"]) {
             img.src = animal["primary_photo_cropped"].small;
             img.height = "100";
+            img.alt = animal["name"];
         }
         else {
             img.alt = "* Image not available *"
