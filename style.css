@@ -32,8 +32,7 @@ body {
 .pets-container {
   margin: 0 15%;
   column-count: 4;
-  column-gap: 10px;
-  height: 100vh;
+  column-gap: 5px;
 }
 
 .main-menu {
@@ -128,13 +127,15 @@ input[type="submit"] {
   margin-bottom: 12px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .card .pet-image {
-  width: 50%;
+  width: 45%;
 }
 
 .card .pet-details {
-  width: 50%;
+  width: 45%;
+  border-left: 1px solid gray;
+  padding-left: 5px;
 }
