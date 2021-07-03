@@ -16,7 +16,7 @@
     // let data = await res.json();
     // animals = data.animals;
     let animals = window.base;
-    //console.log(animals);
+    console.log(animals);
 
 
     let tbody = document.querySelector('tbody');
@@ -34,10 +34,16 @@
         }
         let td = document.createElement("td");
         let img = document.createElement("img");
+        let a = document.createElement("a")
+
         if (animal["primary_photo_cropped"]) {
-            img.src = animal["primary_photo_cropped"].small;
+            //img.src = animal["primary_photo_cropped"].small;
+            img.src = `images\\${animal["id"]}.jpeg`;
             img.height = "100";
             img.alt = animal["name"];
+
+            a.href = animal["url"];
+            a.innerText = "View Profile";
         }
         else {
             img.alt = "* Image not available *"
@@ -46,13 +52,10 @@
         tr.appendChild(td);
 
         td = document.createElement("td");
-        let a = document.createElement("a")
-        a.href = animal["url"];
-        a.innerText = "View Profile";
+
         td.appendChild(a);
         tr.appendChild(td);
 
         tbody.appendChild(tr)
     });
 })();
-
