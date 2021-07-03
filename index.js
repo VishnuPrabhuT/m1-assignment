@@ -25,7 +25,8 @@
         }
 
         if (animal["primary_photo_cropped"]) {
-            img.src = animal["primary_photo_cropped"].small;
+            // img.src = animal["primary_photo_cropped"].small;
+            img.src = `images\\${animal["id"]}.jpeg`;
             img.height = "100";
             img.alt = animal["name"];
         }
