@@ -4,7 +4,7 @@ main {
 }
 
 .form-container {
-  margin: 0 25%;
+  margin: 0 auto;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -12,9 +12,14 @@ main {
   justify-content: space-evenly;
 }
 
+.form-container > p::first-letter {
+  font-size: 30px;
+  color: tomato;
+}
+
 fieldset {
   width: 50%;
-  padding: 50px;
+  padding: 30px;
 }
 
 form fieldset {
@@ -54,6 +59,8 @@ form > fieldset > div.textbox input:last-child {
 fieldset label {
   display: block;
   margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 form .button {
@@ -70,6 +77,5 @@ form .button input {
 }
 
 form fieldset textarea {
-  width: 250px;
   height: 50px;
 }
