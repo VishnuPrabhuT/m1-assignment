@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopt a Pet</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
 </head>
 
 <body>
@@ -29,51 +30,55 @@
             </div>
         </header>
         <main>
-            <h1>Contacting Us</h1>
-            <p>If you need more information or Apply for Adoption, please submit a request:
-            </p>
-            <br>
-            <h2>Fill Out This Form:</h2>
-            <form action="/contact" method="POST">
-                <fieldset>
-                    <legend>Request Form</legend>
-                    <label>Enter your full name</label><br>
-                    <input type="text" name="name"><br>
 
-                    <label>Enter the ID of pet you are willing to Adopt</label><br>
-                    <input type="email" name="text"><br>
 
-                    <label>Enter your phone</label><br>
-                    <input type="tel" name="phone"><br>
+            <div class="form-container">
+                <h1>Contacting Us</h1>
+                <p>If you need more information or Apply for Adoption, please submit a request:
+                </p>
+                <div>
+                    <h2>Fill Out This Form:</h2>
+                </div>
+                <form action="/contact" method="POST">
+                    <fieldset>
+                        <legend>Request Form</legend>
+                        <label>Enter your full name</label>
+                        <input type="text" name="name">
 
-                    <label>Enter your email</label><br>
-                    <input type="tel" name="email"><br>
+                        <label>Enter the ID of pet you are willing to Adopt</label>
+                        <input type="email" name="text">
 
-                    <br><label>How should we contact you?</label><br>
-                    <input type="radio" value="male">Email
-                    <input type="radio" value="female">Phone <br>
+                        <label>Enter your phone</label>
+                        <input type="tel" name="phone">
 
-                    <br>How did you hear about us:<br>
-                    <textarea cols="20" rows="1"></textarea><br>
-                    <br>
-                    <input type="submit" value="Submit Request">
+                        <label>Enter your email</label>
+                        <input type="tel" name="email">
 
-                </fieldset>
-            </form>
-            <br>
+                        <label>How should we contact you?</label>
+                        <input type="radio" value="male">Email
+                        <input type="radio" value="female">Phone
+
+                        <label> How did you hear about us:</label>
+                        <textarea cols="20" rows="1"></textarea>
+
+                        <input class="button" type="submit" value="Submit Request">
+
+                    </fieldset>
+                </form>
+            </div>
         </main>
 
         <footer>
             <div id="nondisclaimer">
                 <div class="copy">&copy; Copyright 2020 :: AdoptAPet.com</div>
                 <div class="social">
-                    <h3>Facebook Image</h3>
-                    <h3>Instagram Image</h3>
-                    <h3>Twitter Image</h3>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
                 </div>
             </div>
             <div id="disclaimer">
-                <p>This website is designed and created solely for educational purposes only at Westcliff University.
+                <p>* This website is designed and created solely for educational purposes only at Westcliff University.
                     All
                     contents are not intended for any commercial gain or use.</p>
             </div>
